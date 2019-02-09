@@ -61,7 +61,9 @@
                       firstRun = false;
                       return oriAction(SPEC_CONTENTS);
                     }
-                    fetch('./backend_openapi.yaml', {
+                    var home = window.location.href;
+                    if(!home.endsWith('/')) home = home + '/';
+                    fetch(home+'./backend_openapi.yaml', {
                       method: 'PUT',
                       headers: {
                         'Content-Type': 'application/yaml',
