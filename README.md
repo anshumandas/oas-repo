@@ -1,5 +1,5 @@
-# swagger-repo
+# oas-repo
 
-Opionated CLI tool to help you manage your OpenAPI(fka Swagger) repo.
+Opionated CLI tool to help you manage your OpenAPI repo.
 
-Used by [generator-openapi-repo](https://github.com/Rebilly/generator-openapi-repo)
+Used by [oas-path-generator](https://github.com/anshumandas/oas-path-generator)
