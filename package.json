@@ -1,11 +1,11 @@
 {
-  "name": "swagger-repo",
+  "name": "oas-repo",
   "version": "2.0.0-rc.10",
-  "description": "CLI tool to help you manage your OpenAPI(fka Swagger) repo.",
+  "description": "CLI tool to help you manage your OpenAPI repo.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rebilly/swagger-repo.git"
+    "url": "https://github.com/anshumandas/oas-repo.git"
   },
   "keywords": [
     "API",
@@ -17,14 +17,14 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Rebilly/swagger-repo/issues"
+    "url": "https://github.com/anshumandas/oas-repo/issues"
   },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --write {bin,lib}/**/*.js"
   },
-  "homepage": "https://github.com/Rebilly/swagger-repo",
+  "homepage": "https://github.com/anshumandas/oas-repo",
   "bin": {
     "swagger-repo": "./bin/swagger-repo.js"
   },
