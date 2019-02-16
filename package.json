@@ -1,6 +1,6 @@
 {
   "name": "oas-repo",
-  "version": "2.0.0-rc.10",
+  "version": "3.0.1",
   "description": "CLI tool to help you manage your OpenAPI repo.",
   "main": "lib/index.js",
   "repository": {
@@ -26,21 +26,21 @@
   },
   "homepage": "https://github.com/anshumandas/oas-repo",
   "bin": {
-    "swagger-repo": "./bin/swagger-repo.js"
+    "oas-repo": "./bin/oas-repo.js"
   },
   "engines": {
     "node": ">=10.14.0"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "commander": "^2.9.0",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "fs-extra": "^7.0.1",
     "gh-pages": "^2.0.1",
     "glob": "^7.0.0",
-    "js-yaml": "^3.5.3",
+    "js-yaml": "^3.12.1",
     "json-pointer": "^0.6.0",
     "jsonpath": "^1.0.0",
     "livereload": "^0.7.0",
@@ -49,12 +49,12 @@
     "node-fetch": "^2.3.0",
     "oas-validator": "^1.1.13",
     "require-dir": "^1.0.0",
-    "swagger-editor-dist": "^3.6.16",
-    "swagger-ui-dist": "^3.20.1",
+    "swagger-editor-dist": "^3.6.22",
+    "swagger-ui-dist": "^3.20.8",
     "sway": "^2.0.5"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "prettier": "^1.15.3"
+    "eslint": "^5.14.0",
+    "prettier": "^1.16.4"
   }
 }
