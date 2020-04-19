@@ -25,8 +25,8 @@ program
   .option('-b, --basedir <relpath>', 'The output file')
   .option('-o, --outfile <filename>', 'The output file')
   .option('-y, --yaml', 'Output YAML(Default is JSON)')
-  .action(function(options) {
-    const spec = api.bundle({ ...options, verbose: true });
+  .action(async function(options) {
+    const spec = await api.bundle({ ...options, verbose: true });
     const str = api.stringify(spec, options);
 
     if (options.outfile) {
@@ -43,10 +43,10 @@ program
   .description('Builds the static assets and puts it ')
   .option('-b, --basedir <relpath>', 'The output file')
   .option('-o, --outdir <dirname>', 'The output directory, web_deploy by default')
-  .action(function(options) {
+  .action(async function(options) {
     const config = api.readConfig();
 
-    const spec = api.bundle({ ...options, verbose: true });
+    const spec = await api.bundle({ ...options, verbose: true });
     const json = api.stringify(spec);
     const yaml = api.stringify(spec, { yaml: true });
     const html = api.compileIndexPage();
@@ -134,8 +134,8 @@ program
   .command('validate')
   .description('Validate OpenAPI file')
   .option('-b, --basedir <relpath>', 'The output file')
-  .action(function(options) {
-    const spec = api.bundle(options);
+  .action(async function(options) {
+    const spec = await api.bundle(options);
     api.validate(spec, options, function(error, result) {
       const isErrors = !_.isEmpty(result.errors);
       const isWarnings = !_.isEmpty(result.warnings);
