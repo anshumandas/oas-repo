@@ -45,7 +45,7 @@
     <script>
       const SPEC_CONTENTS = <%SPEC_CONTENTS%>;
 
-      var firstRun = true;
+      let firstRun = true;
       const SpecUpdateListenerPlugin = function() {
         return {
           statePlugins: {
@@ -61,7 +61,7 @@
                       firstRun = false;
                       return oriAction(SPEC_CONTENTS);
                     }
-                    var home = window.location.href;
+                    let home = window.location.href;
                     if(!home.endsWith('/')) home = home + '/';
                     fetch(home+'./backend_openapi.yaml', {
                       method: 'PUT',
