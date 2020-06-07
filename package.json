@@ -1,6 +1,6 @@
 {
   "name": "oas-repo",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "CLI tool to help you manage your OpenAPI repo.",
   "main": "lib/index.js",
   "repository": {
